@@ -8,14 +8,17 @@ import org.springframework.web.bind.annotation.RestController;
 
 import com.devsuperior.demo.entities.Game;
 import com.devsuperior.demo.services.GameService;
+import org.springframework.web.bind.annotation.GetMapping;
+
 
 @RestController
-@RequestMapping(value = "/games")
+@RequestMapping(value = "/api/games")
 public class GameController {
 
     @Autowired
     private GameService gameService;
     
+    @GetMapping
     public List<Game> findAll() {
         List<Game> result = gameService.findAll();
         return result;

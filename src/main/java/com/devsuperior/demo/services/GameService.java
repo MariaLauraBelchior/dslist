@@ -5,7 +5,7 @@ import java.util.List;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import com.devsuperior.demo.dto.GameMinDTO;
+
 import com.devsuperior.demo.entities.Game;
 import com.devsuperior.demo.repositories.GameRepository;
 
