@@ -14,7 +14,7 @@ import org.springframework.web.bind.annotation.PathVariable;
 
 
 @RestController
-@RequestMapping(value = "/api/games")
+@RequestMapping(value = "/games")
 public class GameController {
 
     @Autowired
